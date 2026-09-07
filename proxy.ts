@@ -13,5 +13,5 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/"],
+  matcher: ["/", "/portfolio/homepage"],
 };

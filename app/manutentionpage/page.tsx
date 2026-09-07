@@ -17,6 +17,25 @@ export default function MaintenancePage() {
         <Link className="maintenance-login" href="/login">
           Acesso privado
         </Link>
+        <footer className="w-full max-w-xl flex justify-center gap-6 py-4 text-sm text-zinc-500">
+          <a
+            href="https://github.com/Joao-P-Silva"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-zinc-300 transition-colors"
+          >
+            GitHub
+          </a>
+          <span>•</span>
+          <a
+            href="https://www.linkedin.com/in/joaosiilva/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-zinc-300 transition-colors"
+          >
+            LinkedIn
+          </a>
+        </footer>
       </section>
     </main>
   );
