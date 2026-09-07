@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Manutenção",
+  title: "Em Desenvolvimento",
 };
 
 export default function MaintenancePage() {

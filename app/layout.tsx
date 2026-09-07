@@ -17,7 +17,7 @@ const geistMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Portfolio",
+    template: "%s",
     default: "Portfolio",
   },
   description:
