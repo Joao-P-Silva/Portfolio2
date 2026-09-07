@@ -218,6 +218,21 @@ body {
   font-size: 0.9rem;
 }
 
+.logout-button {
+  border: 1px solid #3f3f46;
+  border-radius: 0.45rem;
+  padding: 0.65rem 1rem;
+  color: #d4d4d8;
+  background: #18181b;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.logout-button:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
 .btn-primary,
 .btn-secondary {
   display: inline-flex;
