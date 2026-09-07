@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono, Space_Grotesk } from "next/font/google";
+import type { ReactNode } from "react";
 import "./globals.css";
 
 const geistSans = Space_Grotesk({
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     "Portfolio pessoal com projetos, habilidades e contato para trabalhos em produtos digitais.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="en"
