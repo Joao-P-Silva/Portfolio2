@@ -1,5 +1,9 @@
+"use client";
+
 import type { Metadata } from "next";
 import { JetBrains_Mono, Space_Grotesk } from "next/font/google";
+import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 import "./globals.css";
 
 const geistSans = Space_Grotesk({
@@ -15,10 +19,26 @@ const geistMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio | Home",
+  title: "Portfolio",
   description:
     "Portfolio pessoal com projetos, habilidades e contato para trabalhos em produtos digitais.",
 };
+
+function RouteTitle() {
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const titles: Record<string, string> = {
+      "/": "Portfolio | Home",
+      "/login": "Portfolio | Login",
+      "/manutentionpage": "Portfolio | Manutenção",
+    };
+
+    document.title = titles[pathname] ?? "Portfolio";
+  }, [pathname]);
+
+  return null;
+}
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
@@ -26,7 +46,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <RouteTitle />
+        {children}
+      </body>
     </html>
   );
 }
