@@ -14,9 +14,6 @@ export default function MaintenancePage() {
         <a className="maintenance-email" href="mailto:contacto@jhonnysilva.pt">
           contacto@jhonnysilva.pt
         </a>
-        <Link className="maintenance-login" href="/login">
-          Acesso privado
-        </Link>
         <footer className="w-full max-w-xl flex justify-center gap-6 py-4 text-sm text-zinc-500">
           <a
             href="https://github.com/Joao-P-Silva"
