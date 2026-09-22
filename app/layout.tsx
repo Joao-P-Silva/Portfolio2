@@ -22,6 +22,11 @@ export const metadata: Metadata = {
   },
   description:
     "Portfolio pessoal com projetos, habilidades e contato para trabalhos em produtos digitais.",
+  icons: {
+    icon: "/logo.jpeg",
+    shortcut: "/logo.jpeg",
+    apple: "/logo.jpeg",
+  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
